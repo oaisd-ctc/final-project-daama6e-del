@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float maxDistance = 2f;
     [SerializeField] private Text interactableName;
-
+//InteractionObject
 
     private InteractionObject targetInteraction;
 
@@ -26,6 +27,7 @@ public class PlayerInteraction : MonoBehaviour
         if (Physics.Raycast(origin, direction, out raycastHit, maxDistance))
         {
             targetInteraction = raycastHit.collider.gameObject.GetComponent<InteractionObject>();
+            print("It interacted");
         }
 
 
