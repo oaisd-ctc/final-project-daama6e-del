@@ -3,7 +3,12 @@ guid: a3a1e313eabcd4941b9e7e9c3cfb1453
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Decors_1.003
+    second: {fileID: 2100000, guid: c0cef25b7bde4cb449fd6c0eecfd2a84, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
