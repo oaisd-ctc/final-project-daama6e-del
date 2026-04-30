@@ -1,5 +1,6 @@
 using UnityEngine.Audio;
 using UnityEngine;
+using JetBrains.Annotations;
 
 public enum narratorClips
 {
@@ -15,7 +16,7 @@ public enum narratorClips
 }
 
 [System.Serializable]
-public class NarratorVoiceListing
+public class NarratorVoiceListing //Labeling
 {
     public narratorClips label;
     public AudioClip clip;
@@ -30,8 +31,9 @@ public class NarratorScript : MonoBehaviour
     {
         instance = this;
     }
-    public void PlayOneShot(narratorClips requestedAudio, float volume = 1) //Remember! this passes in data in a form.
+    public void PlayOneShot(narratorClips requestedAudio) //Remember! this passes in data in a form.
     {
+        float volume = 1; //Controls volume universally for this audio
         foreach (NarratorVoiceListing clip in soundList)
         {
             if (clip.label == requestedAudio) //There we go finally fixed the comparator, it wants to eat the whole data packet.

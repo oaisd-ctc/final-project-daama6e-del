@@ -1,5 +1,6 @@
 using UnityEngine.Events;
 using UnityEngine;
+using System;
 
 
 public class InteractionObject : MonoBehaviour
@@ -8,13 +9,6 @@ public class InteractionObject : MonoBehaviour
 
 
     public UnityEvent OnInteract = new UnityEvent();
-
-
-    public void OnEnable()
-    {
-
-
-    }
 
 
     public string GetInteractionText()
@@ -26,5 +20,6 @@ public class InteractionObject : MonoBehaviour
     public void Interact()
     {
         OnInteract.Invoke();
+        Debug.Log("Is it working?");
     }
 }

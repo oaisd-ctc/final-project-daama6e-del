@@ -27,7 +27,7 @@ public class PlayerInteraction : MonoBehaviour
         if (Physics.Raycast(origin, direction, out raycastHit, maxDistance))
         {
             targetInteraction = raycastHit.collider.gameObject.GetComponent<InteractionObject>();
-            print("It interacted");
+            //print("It interacted"); //Debugger
         }
 
 
@@ -38,8 +38,6 @@ public class PlayerInteraction : MonoBehaviour
 
 
         SetInteractableNameText(interactionText);
-
-
     }
 
 

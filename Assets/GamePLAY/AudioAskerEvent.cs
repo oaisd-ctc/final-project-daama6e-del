@@ -1,12 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class AudioAskerEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public NarratorScript request;
+
     void Start()
     {
-        
+        //NarratorScript request = new NarratorScript();
+        request.PlayOneShot(narratorClips.INTRO);
     }
 }
