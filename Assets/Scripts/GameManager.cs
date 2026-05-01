@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instnace;
 
 
-    private void Awake()
+    /*private void Awake()
     {
         if (instnace)
         {
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
             instnace = this; //This is now new game manager
             DontDestroyOnLoad(gameObject); //Don't destroy on load and pass in this script as an argument.
         }
-    }
+    }*/
 
 
     public static void LoadScene(string newSceneName) // call to load a new scene    HUH making them into static lets it know they belong to the manager class- so even when one is destroyed they carry on their legacy.

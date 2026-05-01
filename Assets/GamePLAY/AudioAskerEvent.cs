@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class AudioAskerEvent : MonoBehaviour
 {
+    [SerializeField] private narratorClips clipToPlay;
 
-    public NarratorScript request;
-
-    void Start()
+    void OnEnable()
     {
-        //NarratorScript request = new NarratorScript();
-        request.PlayOneShot(narratorClips.INTRO);
+        NarratorScript.instance.PlayOneShot(clipToPlay);
     }
 }
