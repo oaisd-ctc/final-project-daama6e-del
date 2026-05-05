@@ -6,16 +6,16 @@ Flare:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: A basic flare
-  m_FlareTexture: {fileID: 2800000, guid: 87179eedead920b43a0585d22cfa004d, type: 3}
+  m_Name: Layer 2 Flare
+  m_FlareTexture: {fileID: 2800000, guid: 9c083b1dd09c7fc449dbab866ca12343, type: 3}
   m_TextureLayout: 2
   m_Elements:
   - m_ImageIndex: 0
     m_Position: 0
-    m_Size: 9.2
-    m_Color: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
-    m_UseLightColor: 0
+    m_Size: 9.15
+    m_Color: {r: 1, g: 0.8650461, b: 0.7028302, a: 0}
+    m_UseLightColor: 1
     m_Rotate: 0
-    m_Zoom: 0
-    m_Fade: 0
-  m_UseFog: 0
+    m_Zoom: 1
+    m_Fade: 1
+  m_UseFog: 1
