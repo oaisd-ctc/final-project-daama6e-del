@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SceneData/Wrong.unity
     guid: 1c9b9382d71d84b40b28d20c957670d0
+  - enabled: 1
+    path: Assets/SceneData/TheHall.unity
+    guid: 9dc45081413d8fb45a031b0d09202020
   m_configObjects: {}
