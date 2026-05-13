@@ -22,8 +22,8 @@ public class SliderGameLogic : MonoBehaviour
     {
         if (sliderGame.value >= 0.45f && sliderGame.value <= 0.55f) //checks if between margin
         {
+            Debug.Log("Result For Pocketwatch returned True");
             return true;
-            print("It triggered");
         }
         return false;
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 using UnityEngine.SceneManagement;
 
 public class PocketWatch : MonoBehaviour
@@ -31,7 +32,7 @@ public class PocketWatch : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("SafeZone"))
         {
@@ -41,9 +42,19 @@ public class PocketWatch : MonoBehaviour
                 GameSlider.SetActive(true);
                 print("DoorTriggered.");
             }
+
             else
             {
-                print("Error: GameSlider slot is Empty!");
+                print("Error: GameSlider slot is Empty.");
+            }
+        }
+        else if (other.CompareTag("Room")) // If detects the trigger barrier for no, it will remove all possibility of Zoned and GameSlider
+        {
+            Zoned = false;
+            if (watchActive)
+            {
+                GameSlider.SetActive(false);
+                print("DoorTriggered OFF.");
             }
         }
     }

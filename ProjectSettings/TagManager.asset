@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - SafeZone
+  - Room
   layers:
   - Default
   - TransparentFX
