@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &44001697
 Transform:
   m_ObjectHideFlags: 0
@@ -25832,6 +25832,8 @@ GameObject:
   - component: {fileID: 934742174}
   - component: {fileID: 934742173}
   - component: {fileID: 934742172}
+  - component: {fileID: 934742179}
+  - component: {fileID: 934742178}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -25937,6 +25939,48 @@ Transform:
   - {fileID: 1575961777}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 185.057, z: 0}
+--- !u!54 &934742178
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934742171}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &934742179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934742171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476280c6f194afd4eb81dea0fd00a4e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSlider: {fileID: 380925538}
+  sliderGame: {fileID: 380925540}
+  watchActive: 1
 --- !u!4 &936923355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1298425068428956818, guid: 94252a838af8ed448be7e99c74ebd44d, type: 3}
@@ -28001,7 +28045,6 @@ GameObject:
   - component: {fileID: 1121580399}
   - component: {fileID: 1121580402}
   - component: {fileID: 1121580401}
-  - component: {fileID: 1121580400}
   - component: {fileID: 1121580404}
   - component: {fileID: 1121580403}
   m_Layer: 0
@@ -28026,21 +28069,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 103306221}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1121580400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121580398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 476280c6f194afd4eb81dea0fd00a4e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameSlider: {fileID: 0}
-  sliderGame: {fileID: 380925540}
-  watchActive: 1
 --- !u!23 &1121580401
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29149,7 +29177,7 @@ Transform:
   m_GameObject: {fileID: 1202139793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.154, y: 4.98, z: 5.65}
+  m_LocalPosition: {x: -17.414, y: 4.98, z: 5.65}
   m_LocalScale: {x: 1, y: 4.4158, z: 2.5643394}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48543,6 +48571,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1121580398}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 44001696}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

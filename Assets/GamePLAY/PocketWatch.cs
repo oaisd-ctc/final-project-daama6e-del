@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -38,6 +40,10 @@ public class PocketWatch : MonoBehaviour
             {
                 GameSlider.SetActive(true);
                 print("DoorTriggered.");
+            }
+            else
+            {
+                print("Error: GameSlider slot is Empty!");
             }
         }
     }
