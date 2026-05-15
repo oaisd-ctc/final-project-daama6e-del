@@ -3,7 +3,12 @@ guid: 05ef6ffe93117064b8e4954051d4209a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Gramafon
+    second: {fileID: 2100000, guid: e3c5587ff54dcbc4fac1399e24986640, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
