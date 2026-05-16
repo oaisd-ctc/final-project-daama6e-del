@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SceneData/TheHall.unity
     guid: 9dc45081413d8fb45a031b0d09202020
+  - enabled: 1
+    path: Assets/SceneData/Credits.unity
+    guid: 9df75a75eed6e2d46acbac52a67ac98f
   m_configObjects: {}
