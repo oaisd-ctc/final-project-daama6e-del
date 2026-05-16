@@ -20,7 +20,7 @@ public class SliderGameLogic : MonoBehaviour
     // This is the "Bool Sender"
     public bool Result()
     {
-        if (sliderGame.value >= 0.45f && sliderGame.value <= 0.55f) //checks if between margin
+        if (sliderGame.value >= 0.65f && sliderGame.value <= 0.76f) //checks if between margin
         {
             Debug.Log("Result For Pocketwatch returned True");
             return true;
